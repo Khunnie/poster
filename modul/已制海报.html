@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>游天地微店</title>
+		<link rel="stylesheet" href="../style/base.css">
+		<link rel="stylesheet" href="css/modul.css">
+		<script type="text/javascript">
+			var iScale=1;
+		document.write('<meta name="viewport" content="width=device-width,initial-scale='+iScale+',minimum-scale='+iScale+',maximum-scale='+iScale+'" />')
+		document.getElementsByTagName("html")[0].style.fontSize=document.documentElement.clientWidth/18.75+"px";
+		</script>
+		<style>
+		
+		</style>
+	</head>
+
+	<body>
+		<div class="creat-wrap">
+		
+            <!-- 图库列表 -->
+            <div class="list-wrap">
+            	<ul class="list-inner clearfix">
+            		<li>
+            			<div>
+            				<img src="../images/m1.jpg" data-original="../images/m1.jpg" alt="">
+            			</div>
+            		</li>
+            		<li>
+            			<div>
+            				<img src="../images/z4.jpg" data-original="../images/z4.jpg" alt="">
+            			</div>
+            		</li>
+            	</ul>
+            </div>
+        
+		</div>
+		<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.lazyload.mini.js"></script>
+		<script>
+			$(function() {
+			    $("img").lazyload({
+			    	effect: "fadeIn"
+			    });
+			});
+
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>游天地微店</title>
+		<link rel="stylesheet" href="../style/base.css">
+		<link rel="stylesheet" href="css/modul.css">
+		<script type="text/javascript">
+			var iScale=1;
+		document.write('<meta name="viewport" content="width=device-width,initial-scale='+iScale+',minimum-scale='+iScale+',maximum-scale='+iScale+'" />')
+		document.getElementsByTagName("html")[0].style.fontSize=document.documentElement.clientWidth/18.75+"px";
+		</script>
+		<style>
+		
+		</style>
+	</head>
+
+	<body>
+		<div class="local-doc-wrap">
+    
+		    <ul class="local-doc-inner clearfix" data-loading="0" data-tp="0" data-np="1">
+		    	<li>
+		        	<div class="more-data-div Imgbox">
+			            <a href="查看资源图.html">
+			                <img src="../images/modul/lj_bg.jpg" alt="">
+			            </a>
+			        </div>
+		        </li>
+		        <li class="hint">
+		            <div class="more-data-div J_doc-instrobtn">
+		                <img src="../images/modul/lj_bg.jpg" alt="">
+		                <p>上传文档生成二维码</p>
+		                <p>初次使用说明</p>
+		            </div>
+		        </li>
+		    </ul>
+		    <p class="sum-tip" data-num="0" data-sum="50">已经上传0/50</p>
+			<input class="docfile" id="docfile" type="file" name="docfile">
+		</div>
+		<!-- ios -->
+		<div class="guide-wrap J_doc-instroinfo hide">
+		    <div class="guide1-bg">
+		        <img src="../images/modul/bgword.png" alt="">
+		    </div>
+		    <div class="ok-btn">知道啦~</div>
+		    <div class="close-btn"></div>
+		</div>
+		<div class="creat-foot clearfix J_foot1">
+		    <a href="userindex.html" class="cancel-btn">游天地</a>
+		    <a href="javascript:;" class="use-btn J_loacltripsure">上传文档</a>
+		</div>
+		<!--上传文档提示  -->
+		<div class="guide-wrap J_doc-instrotip hide">
+		    <div class="guide1-bg">
+		        <img src="../images/modul/wordtip.png" alt="">
+		    </div>
+		    <div class="ok-btn">知道啦~</div>
+		    <div class="close-btn"></div>
+		</div>
+		<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript">
+			is_ios_system = 1;
+			$(".J_loacltripsure").on("click" , function(){
+                //判断是否ios
+                $(".local-doc-wrap").find(".docfile").remove();
+                $(".local-doc-wrap").append('<input class="docfile" id="docfile" type="file" name="docfile"/>');
+                if(!is_ios_system) {
+                    if(trip.updatetype){
+                        $(".local-doc-wrap").find("#docfile").click();
+                    }
+                }else {
+                    $(".J_doc-instroinfo").removeClass('hide');
+                    $(".local-doc-wrap").addClass('blur hiddren');
+                }
+            });
+            // 关闭/知道啦
+            $(".close-btn").on("click",function(){
+            	$(".J_doc-instroinfo").addClass('hide');
+            	$(".J_doc-instrotip").addClass('hide');
+                $(".local-doc-wrap").removeClass('blur hiddren');
+            })
+            $(".ok-btn").on("click",function(){
+            	$(".J_doc-instrotip").addClass('hide');
+            	$(".J_doc-instroinfo").addClass('hide');
+                $(".local-doc-wrap").removeClass('blur hiddren');
+            })
+            $(".hint").on("click",function(){
+            	$(".J_doc-instrotip").removeClass('hide');
+            	$(".local-doc-wrap").addClass('blur hiddren');
+            })
+		</script>
+	</body>
+
+</html>

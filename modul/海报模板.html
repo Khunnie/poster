@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>游天地微店</title>
+		<link rel="stylesheet" href="../style/base.css">
+		<link rel="stylesheet" type="text/css" href="css/modul.css">
+		<script type="text/javascript">
+			var iScale=1;
+		document.write('<meta name="viewport" content="width=device-width,initial-scale='+iScale+',minimum-scale='+iScale+',maximum-scale='+iScale+'" />')
+		document.getElementsByTagName("html")[0].style.fontSize=document.documentElement.clientWidth/18.75+"px";
+		</script>
+		
+	</head>
+
+	<body>
+
+			<div class="modul_wrap">
+				<ul id="modul_Img">
+					<li>
+						<div>
+							<img src="../images/m1.jpg" data-original="../images/m1.jpg" alt="" class="lazyimg" />
+						</div>
+						
+					</li>
+					<li>
+						<div>
+							<img src="../images/z3.jpg" data-original="../images/z3.jpg" alt="" class="lazyimg" >
+						</div>
+						
+					</li>
+					<li>
+						<div>
+							<img src="../images/z4.jpg" data-original="../images/z4.jpg" alt="" class="lazyimg" >
+						</div>
+						
+					</li>
+					<li>
+						<div>
+							<img src="../images/z5.jpg" data-original="../images/z5.jpg" alt="" class="lazyimg" >
+						</div>
+						
+					</li>
+					<li>
+						<div>
+							<img src="../images/z4.jpg" data-original="../images/z4.jpg" alt="" class="lazyimg" >
+						</div>
+						
+					</li>
+					<li>
+						<div>
+							<img src="../images/z5.jpg" data-original="../images/z5.jpg" alt="" class="lazyimg" >
+						</div>
+						
+					</li>
+				
+				</ul>
+			</div>	
+		</div>
+		<!-- 点击图片显示海报 -->
+		<div id="fix_modul">
+			<img src="../images/m1.jpg" alt="" id="modelimg">
+		</div>
+		<div class="creat-foot fix hid">
+			<a href="javascript:;" id="close_Mb">取消</a>
+			免费
+			<a href="javascript:;" id="success_Mb">使用</a>
+		</div>
+		<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.lazyload.mini.js"></script>
+		<script type="text/javascript" src="js/modul.js"></script>
+		<script>
+			$(function() {
+			    $(".lazyimg").lazyload({
+			    	effect: "fadeIn"
+			    });
+			});
+
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<link rel="stylesheet" href="../style/base.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<div class="main-wrap">
+		<!-- 左边导航 -->
+		<div class="left-nav">
+			<div class="logo-img">
+				<a href="javascript:;">
+					<img src="../images/modul/logo.png" alt="">
+				</a>
+			</div>
+			
+			<div class="user-img">
+				<a href="javascript:;">
+					<img src="../images/modul/index-user.jpg" alt="">
+				</a>
+			</div>
+		</div>
+		<!-- 中间内容 -->
+		<div class="edit-body">
+			<div class="creat-view">
+				
+		        <!-- 上传文件 -->
+		        <div class="create-main J_localdoc">
+		        	<div class="userinfo clearfix">
+			            <div class="user-touxiang">
+			                <img src="../images/image.png" alt="">
+			            </div>
+			            <p class="user-name">忙</p>
+			            <ul class="user-nav">
+				            <li><a href="制作记录.html">制作记录</a></li>
+				            <li><a class="sel-a"  href="行程文档.html">行程文档</a></li>
+				        </ul>
+			        </div>
+
+				    <div class="add-select-wrap clearfix">
+				         <div class="exit-bgbtn yellow J_loacldocsure">上传文档 <input type="file" id="docfile" class="docfile" accept=".docx"></div>
+				        
+				         <div class="select-label J_docsum">已经上传1/50</div>
+				    </div>
+				    <div class="main-con">
+				        <div class="main-mode-wrap">
+				            <ul class="main-mode-list clearfix J_doc-list">
+				                <li>
+				                	<div>
+				                		<a target="_blank" href="查看文档.html" >
+					                		<img src="../images/modul/m1.jpg" alt="Doc1">
+					                	</a>
+				                	</div>
+				                </li>
+				                <li class="hint">
+				                    <div class="more-data-div J_doc-instrobtn">
+				                        <img src="http://lxt.cncn.net/static/images/docinstro.jpg" alt="">
+				                        <p>上传文档生成二维码</p>
+				                        <p>初次使用说明</p>
+				                    </div>
+				                </li>
+				            </ul>
+				        </div>
+				    </div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<!-- 文档提示 -->
+	<div class="guide-wrap J_updoctipwrap hide">
+	    <div class="guide-box">
+	        <img src="../images/modul/wordtip.png" alt="">
+	        <div class="guide-btn J_updoctipbtn">知道啦~</div>
+	    </div>
+	</div>
+	<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../modul/layer/layer.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+		$(".hint").on("click",function(){
+			$(".J_updoctipwrap").removeClass("hide");
+			$(".main-wrap").addClass("blur");
+
+		})
+		// 知道啦
+		$(".J_updoctipbtn").on("click",function(){
+			$(".J_updoctipwrap").addClass("hide");
+			$(".main-wrap").removeClass("blur");
+		})
+	</script>
+	</body>
+
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>游天地微店</title>
+		<link rel="stylesheet" href="../style/base.css">
+		<link rel="stylesheet" href="css/modul.css">
+		<script type="text/javascript">
+			var iScale=1;
+		document.write('<meta name="viewport" content="width=device-width,initial-scale='+iScale+',minimum-scale='+iScale+',maximum-scale='+iScale+'" />')
+		document.getElementsByTagName("html")[0].style.fontSize=document.documentElement.clientWidth/18.75+"px";
+		</script>
+		<style>
+		#mode_img{
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 0;
+			width:100%;
+			height: auto;
+		}
+		.text1{
+		 	position: absolute;
+		 	left:11.3rem;
+		 	top: 5.725rem;
+		 	font-size:0.75rem;
+		 	color: #fff;
+		 	z-index: 2;
+			width:1.3rem;
+			height:8.725rem;
+			text-align: center;
+			line-height: 0.75rem;
+			font-family:"微软雅黑";
+			padding:1.45rem 0 1.5rem 0;
+		 }
+		 .text2{
+		 	position: absolute;
+		 	left:7.7rem;
+		 	top: 14.95rem;
+		 	z-index: 2;
+		 	font-size: 0.5rem;
+		 	color: #46acdb;
+			width:5.25rem;
+			height: 0.75rem;
+			line-height:0.75rem;
+			font-family:"微软雅黑";
+			font-weight: bold;
+		 }
+		 .text3{
+		 	position: absolute;
+		 	left:7.7rem;
+		 	top:15.7rem;
+		 	z-index: 2;
+		 	color: #0e96e5;
+		 	font-size: 1.525rem;
+		 	width:5.25rem;
+		 	height:2.025rem;
+		 	line-height:2.025rem;
+		 	font-family:"微软雅黑";
+		 }
+		 .text4{
+		 	position: absolute;
+		 	left: 7.75rem;
+		 	top:17.95rem;
+		 	z-index: 2;
+		 	color: #fff;
+		 	font-size: 0.5rem;
+		 	width: 5.1rem;
+		 	height:0.675rem;
+		 	line-height: 0.675rem;
+		 	font-family:"微软雅黑";
+			font-weight: bold;
+			text-align: center;
+		 }
+		 .text5{
+		 	position: absolute;
+		 	left:5.175rem;
+		 	bottom:4.075rem;
+		 	z-index: 2;
+		 	font-size: 0.725rem;
+		 	color: #1c70c9;
+		 	width: 12.6rem;
+		 	height:1.375rem;
+		 	line-height:1.375rem;
+			font-family:"微软雅黑";
+			font-weight: bold;
+		 }
+		  .text6{
+		 	position: absolute;
+		 	left:5.175rem;
+		 	bottom:2.575rem;
+		 	z-index: 2;
+		 	color: #1c70c9;
+		 	font-size: 0.6rem;
+		 	width: 12.6rem;
+		 	height: 1.5rem;
+		 	line-height: 0.75rem;
+		 }
+
+		  .text7{
+		 	position: absolute;
+		 	left:5.175rem;
+		 	bottom: 1.3rem;
+		 	z-index: 2;
+		 	color: #1c70c9;
+		 	font-size: 0.6rem;
+		 	width: 12.6rem;
+		 	height:1.275rem;
+		 	line-height:1.275rem;
+		 	font-family:"微软雅黑";
+		 }
+		
+		.erweima-wrap{
+			position: absolute;
+			left: 1rem;
+			bottom:1.7rem;
+			width: 3.475rem;
+			height: 3.475rem;
+			z-index: 2;
+
+		}
+		</style>
+	</head>
+
+	<body>
+		<div class="creat-wrap">
+			<!-- 主显页 -->
+			<div class="creat-con">
+				<div class="conped">
+					<div class="mode-wrap">
+						<!-- 移动背景图 -->
+						<img src="../images/modul/haidaobg.jpg" alt="" id="mode_img">
+						<!-- 外部背景图 -->
+						<img src="../images/modul/haidao.png" alt="" class="bg_body">
+						<textarea class="text1 edit_box edit-box-ani">马尔代夫七日游</textarea>
+						<textarea class="text2 edit_box edit-box-ani">已含杂费</textarea>
+						<textarea class="text3 edit_box edit-box-ani">1288</textarea>
+						<textarea class="text4 edit_box edit-box-ani">12月25/27日</textarea>
+						<textarea class="text5 edit_box edit-box-ani">武汉出发</textarea>
+						<textarea class="text6 edit_box edit-box-ani">住五星大公馆,全景漓江,竹筏亲水,船游一江四湖,60标椿记,啤酒鱼,车载WIFI,真正纯玩</textarea>
+						<textarea class="text7 edit_box edit-box-ani">满2人立减500元/单</textarea>
+						<!-- 二维码 -->
+						<div class="erweima-wrap">
+							<div class="erweima">
+								<i class="erweima_ico"></i>
+								<img src="../images/modul/ewm.jpg">
+								<div class="erwei-tip">点此更换二维码</div>
+							</div>
+						</div>
+					</div>
+					<!-- 完成图 -->
+					<div class="save-mode hide">
+						<img src="../images/modul/haidaoPic.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<!-- 底部 -->
+			<div class="creat-foot J_foot1">
+				<a href="javascript:;" id="close_Mb">取消</a>
+				<a href="javascript:;" class="use-btn" id="success_Mb" >完成</a>
+			</div>
+			<!-- 更换背景图按钮 -->
+			<div class="bg-btn J_bgbtn"></div>
+			<div class="bg-btn-tip">点此更换背景图</div>
+			<!-- 上下拖拽图片 -->
+			<div class="dragimg-wrap J_dragimg">
+		        <div class="dragimg-wrap-con" id="J_dragimgwrap">
+		           <div class="dragimg-start-btn" id="J_dragimgbtn"></div>
+		        </div>
+		        <div class="movebg-tip">按住上下移动背景图</div>
+	       </div>
+	       <!-- 打开图库 -->
+	       <div class="foot-dialog-wrap J_changeMode hide">
+			    <div class="foot-dialog">
+			        <div class="foot-dialog-top">
+			            <p class="foot-dialogtit-m grey">更换背景图</p>
+			            <p class="foot-dialog-btn yellow J_openPic">从图库中选择</p>
+			            <div class="foot-dialog-btn larheight yellow">
+			                <div class="J_localPic"><i class="cricle-red"></i>从手机中选择</div>
+			                <div class="agreementtip J_agreementbtn">[√]接受<em class="red">《图片上传功能使用协议》</em></div>
+			            </div>
+			        </div>
+			        <div class="foot-dialog-bottom J_changeModeGoon">
+			            取消
+			        </div>
+			    </div>
+			</div>
+			<!-- 二维码更换 -->
+			<div class="foot-dialog-wrap J_codelist hide">
+                <div class="foot-dialog">
+                    <div class="foot-dialog-top">
+                        <p class="foot-dialogtit-m grey">更换二维码</p>
+                        <p class="foot-dialog-btn yellow J_codetextbtn">输入网址</p>
+                        <p class="foot-dialog-btn yellow J_codesaoyisaobtn">扫一扫</p>
+                        <p class="foot-dialog-btn yellow J_codedocbtn">使用文档</p>
+                    </div>
+                    <div class="foot-dialog-bottom J_cancelcodelist">
+                        取消
+                    </div>
+                </div>
+            </div>
+            <!-- 输入网址 -->
+            <div class="guide-wrap J_codewrap hide">
+                <div class="inputerwei-wrap">
+                    <div class="inputerwei-tit clearfix">
+                        <span class="J_closecode">取消</span>
+                        <em>
+                            <p class="big">更换二维码</p>
+                            <p class="small">输入网址自动生成二维码</p>
+                        </em>
+                        <span class="J_sendCode">完成</span>
+                    </div>
+                    <div class="inputerwei-con clearfix">
+                        <textarea name="" id="code-text" placeholder="http://www.youtiandi.com/"></textarea>
+                        <img class="input-con-erwei" src="../images/modul/ewm.jpg" alt="">
+                    </div>
+                    <div class="inputerwei-foot J_codeTip">如何快速地输入网址？</div>
+                </div>
+            </div>
+            <!-- 使用文档 -->
+            <div class="local-doc-wrap hide">
+    
+			    <ul class="local-doc-inner clearfix" data-loading="0" data-tp="0" data-np="1">
+			        <li class="hint">
+			            <div class="more-data-div J_doc-instrobtn">
+			                <img src="../images/modul/lj_bg.jpg" alt="">
+			                <p>上传文档生成二维码</p>
+			                <p>初次使用说明</p>
+			            </div>
+			        </li>
+			        <li class="hint">
+			        	<div class="more-data-div Imgbox">
+				            <a href="javascript:;">
+				                <img src="../images/modul/lj_bg.jpg" alt="">
+				            </a>
+				        </div>
+			        </li>
+			    </ul>
+			    <p class="sum-tip" data-num="0" data-sum="50">已经上传0/50</p>
+				<input class="docfile" id="docfile" type="file" name="docfile">
+			</div>
+			
+			<div class="creat-foot clearfix J_foot2 hid">
+			    <a href="javascript:;" class="cancel-btn J_localdoccancel">取消</a>
+			    <a href="javascript:;" class="use-btn J_loacldocsure" data-allow="0">上传文档</a>
+			</div>
+			<!-- 编辑完成 -->
+			<div class="creat-foot clearfix J_foot3 hid">
+                <a href="javascript:;" class="cancel-btn J_completeGoon">继续</a>
+                <a href="javascript:;" class="use-btn J_completeSave">保存/分享</a>
+            </div>
+            <!-- 继续制作，再次编辑 -->
+            <div class="foot-dialog-wrap J_newpic hide">
+			    <div class="foot-dialog">
+			        <div class="foot-dialog-top">
+			            <a class="foot-dialogtit-m blue" href="javascript:;">制作新图</a>
+			            <p class="foot-dialog-btn J_newagain">再次编辑</p>
+			        </div>
+			        <div class="foot-dialog-bottom J_cancelnew">
+			            取消
+			        </div>
+			    </div>
+			</div>
+			<!-- 长按保存 -->
+			<div class="guide-wrap J_chanang hide">
+                <div class="guide1-bg">
+                    <img src="../images/modul/guide3-bg.png" alt="">
+                </div>
+                <div class="ok-btn">知道啦~</div>
+                <div class="close-btn"></div>
+            </div>
+            <!-- 舍弃编辑 -->
+            <div class="foot-dialog-wrap J_cancelMode hide">
+                <div class="foot-dialog">
+                    <div class="foot-dialog-top">
+                        <p class="foot-dialogtit-b">舍弃此次编辑</p>
+                        <em class="foot-dialogtit-s">内容将被清空</em>
+                        <p class="foot-dialog-btn red J_giveup">舍弃</p>
+                    </div>
+                    <div class="foot-dialog-bottom J_cancelModeGoon">
+                        继续编辑
+                    </div>
+                </div>
+            </div>
+            <!-- 图库列表 -->
+            <div class="list-wrap hide">
+            	<ul class="list-inner clearfix">
+            		<li>
+            			<div>
+            				<img src="../images/m1.jpg" data-original="../images/m1.jpg" alt="">
+            			</div>
+            		</li>
+            		<li>
+            			<div>
+            				<img src="../images/z4.jpg" data-original="../images/z4.jpg" alt="">
+            			</div>
+            		</li>
+            	</ul>
+            </div>
+            <!-- 图库底部 -->
+            <div class="creat-foot clearfix J_foot4 hid">
+		        <a href="javascript:;" class="cancel-btn J_openCancel">取消</a>
+		            <em class="free-pay J_addView" data-zone_id="0" data-p_id="0">全部图片</em>
+		        <a href="javascript:;" class="use-btn J_openMudid">确认</a>
+		    </div>
+		</div>
+		<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.lazyload.mini.js"></script>
+		<script type="text/javascript" src="js/modul.js"></script>
+		<script>
+	
+		</script>
+	</body>
+
+</html>
